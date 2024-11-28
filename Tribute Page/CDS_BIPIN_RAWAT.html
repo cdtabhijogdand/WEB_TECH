@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            background-image: url("./flag\ 3.jpg");
+            /* background-image: url("./bg\ 2.jpg"); */
+            /* background-image: url("./bg\ 1.jpg"); */
+            /* background-image: url("./army.jpg"); */
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgba(255, 255, 255, 0.33);
+            /* box-shadow: 0px 0px 50px rgb(42, 73, 40); */
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            border: 1px solid;
+            /* background-image: url("./bg\ 1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; */
+
+        }
+
+        #container1 {
+            height: 90vh;
+            width: 80vw;
+            padding: 50px;
+            margin: 50px;
+            margin-left: 140px;
+            box-shadow: 0px 0px 50px;
+            border: 1px transparent;
+
+            border-radius: 35px;
+
+            background-color: skyblue;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.13);
+            overflow: scroll;
+            color: rgb(255, 196, 0);
+            text-indent: 50px;
+            text-align: center;
+            text-align: justify;
+
+            /* padding: 50px; */
+            /* z-index: -1; */
+            border: hidden;
+            scrollbar-width: none;
+
+        }
+
+        .photo {
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+            position: relative;
+            /* align-items: center; */
+            /* left: 30px auto; */
+            background-image: url("./cds\ 2.avif");
+            background-size: cover;
+            /* padding: 100px; */
+            left: 300px;
+            background-position: center;
+
+            border: 1px solid transparent;
+            box-shadow: 0px 0px 50px rgb(42, 73, 40);
+            /* position: relative; */
+            /* animation: slider infinite 3s linear; */
+        }
+
+        .name {
+            color: rgb(16, 53, 11);
+            text-indent: 50px;
+            border-radius: 50px;
+            text-decoration: dashed;
+
+            box-shadow: 0px 0px 50px rgb(42, 73, 40);
+            text-align: center;
+        }
+
+        .datacontainer {
+            height: 450px;
+            width: 480px;
+            padding: 50px;
+            margin: 50px;
+            margin-left: 20px;
+            box-shadow: 0px 0px 50px;
+            border: 1px transparent;
+            border-radius: 35px;
+            position: relative;
+            background-color: rgba(128, 87, 87, 0.1);
+            /* overflow: scroll; */
+            color: rgb(42, 73, 40);
+            text-indent: 50px;
+            text-align: center;
+            text-align: justify;
+            border: hidden;
+            scrollbar-width: none;
+            text-indent: 50px;
+            text-decoration: dashed;
+            box-shadow: 0px 0px 50px rgb(42, 73, 40);
+        }
+
+        #data1 {
+            left: 0px;
+        }
+
+        #data2 {
+            left: 450px;
+        }
+
+        #data3 {
+            left: 0px;
+        }
+
+        #data4 {
+            left: 450px;
+        }
+
+        #data5 {
+            left: 0px;
+        }
+
+        #data6 {
+            left: 450px;
+        }
+
+        #data7 {
+            left: 0px;
+        }
+
+        #data8 {
+            left: 450px;
+        }
+
+        #data9 {
+            left: 0px;
+        }
+
+        #data10 {
+            left: 450px;
+        }
+
+        #data11 {
+            left: 0px;
+        }
+
+        #data12 {
+            left: 450px;
+        }
+
+        #data13 {
+            left: 0px;
+        }
+
+        #data14 {
+            left: 450px;
+        }
+
+        #data15 {
+            left: 0px;
+            height: 660px;
+            width: 880px;
+        }
+
+        #data16 {
+            height: 850px;
+            width: 880px;
+            
+            font-size: 35px;
+
+
+        }
+
+
+        /* .photocontainer{
+
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            
+            text-align: center;
+            line-height: 100px;
+            display: inline-block;
+            text-shadow: 15px;
+        } */
+
+        #photo1 {
+            height: 350px;
+            width: 350px;
+            background-image: url("./cds\ 7.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            padding: 20px;
+        }
+
+        #photo2 {
+            height: 350px;
+            width: 350px;
+            background-image: url("./cds\ 6.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            padding: 20px;
+        }
+
+        /* #photo3 {
+            height: 350px;
+            width: 350px;
+            left: 400px;
+
+            position: absolute;
+            background-image: url("./cds\ 7.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            padding: 20px;
+        }
+
+        #photo4 {
+            height: 350px;
+            width: 350px;
+            left: 400px;
+            position: absolute;
+            background-image: url("./cds\ 7.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            border: 1px solid transparent;
+            padding: 20px;
+        } */
+
+
+        .thanks {
+
+            color: rgb(16, 53, 11);
+            text-indent: 50px;
+            border-radius: 50px;
+            text-decoration: dashed;
+
+            box-shadow: 0px 0px 50px rgb(42, 73, 40);
+            text-align: center;
+        }
+
+
+       
+
+        h2 {
+            color: rgb(255, 196, 0);
+        }
+
+        h3 {
+            color: rgb(8, 88, 3);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container" id="container1">
+
+        <div class="photo" id="contain">
+            </h1>
+        </div>
+        <div class="name">
+            <h1 class="title">⭐️⭐️⭐️⭐️ CDS BIPIN RAWAT ⭐️⭐️⭐️⭐️</h1>
+        </div>
+
+
+        <div class="datacontainer" id="data1">
+
+            <h2><b>Personal Life
+                    <hr>
+                </b></h2>
+            <br>
+            <h3>General Bipin Rawat PVSM UYSM AVSM YSM SM VSM ADC (16 March 1958 – 8 December 2021) was an Indian
+                military officer who was a four-star general of the Indian Army.He served as the first Chief of
+                Defence Staff (CDS) of the Indian Armed Forces from January 2020 until his death in a helicopter
+                crash in December 2021. Prior to taking over as the CDS, he served as the 57th Chairman of the
+                Chiefs of Staff Committee (Chairman COSC) of the Indian Armed Forces as well as 27th Chief of the
+                Army Staff (COAS) of the Indian Army.
+            </h3>
+
+        </div>
+        <div class="datacontainer" id="data2">
+            <h2><b>Early life and education!!
+                    <hr>
+                </b></h2>
+            <br>
+            <h3>Bipin Rawat was born in Pauri town of Pauri Garhwal district, present-day Uttarakhand state, on 16 March
+                1958 [8] to a Hindu Garhwali Rajput family. His family had been serving in the Indian Army for
+                multiple generations. His father Lakshman Singh Rawat (1930–2015) was from Sainj village of the Pauri
+                Garhwal district; commissioned into 3/11 Gorkha Rifles in 1951, he retired as Deputy Chief of the Army
+                Staff in 1988 as a Lieutenant General. His mother was from the Uttarkashi district and was
+                the daughter of Kishan Singh Parmar, the ex-Member of the Legislative Assembly (MLA) from Uttarkashi.
+            </h3>
+        </div>
+
+
+        <!-- 3ed box -->
+
+        <div class="datacontainer" id="data3">
+
+            <h2><b>Early life and education!!
+                    <hr>
+                </b></h2>
+            <br>
+            <h3>Rawat was also a graduate of the Defence Services Staff College (DSSC), Wellington and the Higher
+                Command Course at the United States Army Command and General Staff College (USACGSC) at Fort
+                Leavenworth, Kansas in 1997. From his tenure at the DSSC, he obtained an MPhil degree in
+                Defence Studies as well as diplomas in Management and Computer Studies from the University of Madras. In
+                2011, he was awarded an honorary doctorate by Chaudhary Charan Singh University, Meerut for his research
+                on military-media strategic studies.
+            </h3>
+
+        </div>
+
+        <!-- 4th box -->
+
+
+        <div class="datacontainer" id="data4">
+
+            <h2><b>Military career
+                    <hr>
+                    <hr><br>Early career
+                </b></h2>
+            <br>
+            <h3>Rawat was commissioned into the 5th battalion, the 11 Gorkha Rifles (5/11 GR) on 16 December 1978, the
+                same unit as his father.[21][22] During the 1987 Sino-Indian skirmish in the Sumdorong Chu valley, then
+                Captain Rawat's battalion was deployed against the Chinese People's Liberation Army.[23] The standoff
+                was the first military confrontation along the disputed McMahon Line after the 1962 war
+            </h3>
+
+        </div>
+
+        <!-- box 5 -->
+        <div class="datacontainer" id="data5">
+
+            <h2><b>Military career
+                    <hr>
+                </b></h2>
+            <br>
+            <h3> Early in his career, Rawat had an instructional tenure at the Indian Military Academy, Dehradun. He had
+                much experience in high-altitude warfare and spent ten years conducting counter-insurgency
+                operations.[18] He commanded a company in Uri, Jammu and Kashmir as a Major. He attended the Defence
+                Services Staff College, Wellington. After the course, he was appointed General Staff Officer, Grade 2
+                (GSO2) at the Military Operations Directorate at Army headquarters. He also served as a logistics staff
+                officer of a Re-organised Army Plains Infantry Division (RAPID) in Central India.</h3>
+
+        </div>
+
+
+        <!-- box 6 -->
+        <div class="datacontainer" id="data6">
+
+            <h2><b>UN mission in Congo
+                    <hr>
+                </b></h2>
+            <br>
+            <h3>Rawat commanded MONUSCO (a Multinational Brigade in a Chapter VII mission in the Democratic Republic of
+                the Congo). Within two weeks of deployment in the DRC, the Brigade faced a major offensive in the east
+                which threatened the regional capital of North Kivu, Goma. The offensive also threatened to destabilise
+                the country as a whole. The situation demanded a rapid response and North Kivu Brigade was reinforced,
+                where it was responsible for over 7,000 men and women, representing nearly half of the total MONUSCO
+                force.
+            </h3>
+
+        </div>
+
+        <!-- box 7 -->
+
+        <div class="datacontainer" id="data7">
+
+            <h2><b>General officer
+                    <hr>
+                </b></h2>
+            <br>
+            <h3>
+                After promotion to Major General, Rawat took over as the General Officer Commanding 19th Infantry
+                Division (Uri). For his command of the Dagger Division, as the 19th Infantry Division is called, he was
+                awarded the Ati Vishisht Seva Medal on 26 January 2013.[31] He subsequently served as the Major General
+                General Staff (MGGS) of the Eastern Command.
+            </h3>
+
+        </div>
+
+        <!-- box 8 -->
+        <div class="datacontainer" id="data8">
+
+            <h2><b>Chief of Defence Staff
+                    <hr>
+                </b></h2>
+            <br>
+            <h3>
+                He served as the first Chief of Defence Staff (CDS) of the Indian Armed Forces from January 2020 until
+                his death in December 2021.
+                <br>
+                India as of 2021 had service–specific commands system.[67] joint and integrated commands, also known as
+                unified commands; and further divided into theatre or functional commands, have been set up and more are
+                proposed.[68] In February 2020, Rawat said two to five theatre commands may be set up.
+            </h3>
+
+
+        </div>
+
+        <!-- box 9 -->
+
+        <div class="datacontainer" id="data9">
+
+            <h2><b>2015 Myanmar strikes
+                    <hr>
+                </b></h2>
+            <br>
+            <h3>
+                Promoted to the rank of Lieutenant General, he was appointed General Officer Commanding III Corps,
+                headquartered in Dimapur. In June 2015, eighteen Indian soldiers were killed in an ambush by militants
+                belonging to the United Liberation Front of Western South East Asia (UNLFW) in Manipur. The Indian Army
+                responded with cross-border strikes in which units of the 21st battalion of the Parachute Regiment
+                struck an NSCN-K base in Myanmar. 21 Para was under the operational control of the Dimapur based III
+                Corps, which was then commanded by Rawat.[18][32] For his command of III Corps, he was awarded the Uttam
+                Yudh Seva Medal on 26 January 2016
+            </h3>
+
+        </div>
+
+        <!-- box 10 -->
+
+        <div class="datacontainer" id="data10">
+
+            <h2><b>Army Commander
+                    <hr>
+                </b></h2>
+            <br>
+            <h3>
+                After relinquishing command of III Corps, Rawat was appointed General Officer Commanding Maharashtra,
+                Gujarat and Goa Area, headquartered in Mumbai.[34] After a short stint, he was promoted to the Army
+                Commander grade and assumed the post of General Officer Commanding-in-Chief (GOC-in-C) Southern Command
+                on 1 January 2016.[26][27] After an eight-month tenure, he assumed the post of Vice Chief of the Army
+                Staff on 1 September 2016
+            </h3>
+
+        </div>
+
+
+        <!-- box 11 -->
+        <div class="datacontainer" id="data11">
+
+            <h2><b>Chief of the Army Staff
+                    <hr>
+                </b></h2>
+            <br>
+            <h3>
+                On 17 December 2016, the Government of India appointed Rawat as the 27th Chief of the Army Staff,
+                superseding two more senior Lieutenant Generals, Praveen Bakshi (Eastern Army Commander) and P. M. Hariz
+                (Southern Army Commander).[37] The appointment made by NDA ruled Government was politically
+                controversial.[38] Rawat was accused of nepotism and gratuitously politicising the appointment, by the
+                senior serving and retired military officers.
+                <br>
+                He took office of Chief of the Army Staff as the 27th COAS on 31 December 2016, after retirement of
+                General Dalbir Singh Suhag.
+            </h3>
+
+        </div>
+
+
+        <!-- box 12 -->
+        <div class="datacontainer" id="data12">
+
+            <h2><b>Doklam standoff with Chinese army
+                    <hr>
+                </b></h2>
+            <br>
+            <h3>
+                In 2017, at Doklam a 73-day military border standoff happened between the Indian Armed Forces and the
+                People's Liberation Army of China over Chinese construction of a road in Doklam near a trijunction
+                border area between Bhutan, China and India.[47][48] After the standoff ended Rawat said China had begun
+                'flexing its muscles' and was trying to 'nibble away' territory held by India in a gradual manner to
+                test the limits of thresholds. He stated, India had to be "wary about" China, "and remain prepared for
+                situations that could develop into conflicts"
+            </h3>
+
+        </div>
+
+
+        <!-- box 13 -->
+        <div class="datacontainer" id="data13">
+
+            <h2><b>Honours and decorations
+                    <hr>
+                </b></h2>
+            <br>
+            <h3>
+                During his career of nearly 43 years, he was awarded multiple times for gallantry and distinguished
+                service. He was awarded the Vishisht Seva Medal in 2001, the Sena Medal in 2005, the Yudh Seva Medal in
+                2009, the Ati Vishisht Seva Medal in 2013, the Uttam Yudh Seva Medal in 2016 and the Param Vishisht Seva
+                Medal in 2019. He was also awarded the COAS Commendation on two occasions and the Army Commander's
+                Commendation. While serving with the United Nations, he was awarded the Force Commander's commendation
+                twice. He was posthumously honoured with the Padma Vibhushan in the 2022 Republic Day honours list.
+            </h3>
+
+        </div>
+
+        <!-- box 14 -->
+
+        <div class="datacontainer" id="data14">
+
+            <h2><b>Personal life
+                    <hr>
+                </b></h2>
+            <br>
+            <h3>
+                In 1985, Rawat married Madhulika Rawat (née Raje Singh). A descendant of an erstwhile princely family,
+                she was the daughter of Kunwar Mrigendra Singh, sometime Riyasatdar of the pargana of Sohagpur (Shahdol)
+                Riyasat in Shahdol district and an Indian National Congress MLA from the district in 1967 and 1972.[74]
+                She was educated at Scindia Kanya Vidyalaya in Gwalior and graduated in psychology at University of
+                Delhi.[75] The couple had two daughters, Kritika and Tarini.
+                <br>
+                Madhulika Rawat was the president of the Army Wives Welfare Association (AWWA) during Bipin Rawat's
+                tenure as Chief of the Army Staff. She became the president of the Defence Wives Welfare Association
+                (DWWA),
+            </h3>
+
+        </div>
+
+        <!-- box 15 -->
+
+        <div class="datacontainer" id="data15">
+
+            <h2><b>Death and legacy
+                    <hr>
+                </b></h2>
+            <br>
+            <h3>
+                On 8 December 2021, Rawat, his wife and members of his staff were amongst 10 passengers and 4 crew
+                members aboard an Indian Air Force Mil Mi-17 helicopter flight en route from the Sulur Air Force Base to
+                the Defence Services Staff College (DSSC), Wellington, where Rawat was to deliver a lecture.[79] At
+                around 12:10 p.m. local time, the aircraft crashed near a residential colony of private tea estate
+                employees on the outskirts of the hamlet of Nanjappachatiram, Bandishola panchayat, in the
+                Katteri-Nanchappanchathram area of Coonoor taluk, Nilgiris district. The crash site was 10
+                kilometres (6.2 mi; 5.4 nmi) from the flight's intended destination.[83] Rawat's death – and those of
+                his wife and 11 others – was later confirmed by the Indian Air Force. Rawat's liaison officer, Group
+                Captain Varun Singh initially survived the incident, but later succumbed to injuries on 15 December.[84]
+                Rawat was 63 at the time of his death.
+                <br>
+                Rawat and his wife were cremated according to Hindu rituals with full military honours and 17 gun salute
+                at Brar Square Crematorium in Delhi Cantonment on 10 December 2021.[86] Their cremation was carried out
+                by their daughters, who took their ashes to Haridwar and immersed them in the Ganges at the Har Ki Pauri
+                ghat on 12 December.
+                <br>
+                On Rawat's 65th birth anniversary, the Indian Navy instituted the General Bipin Rawat rolling trophy for
+                the Woman Agniveer Trainee standing First in Overall Order of Merit. The trophy was instituted to honour
+                his contribution to transformational Agnipath Scheme and is presented at the sailors training centre INS
+                Chilka. The Navy also instituted the General Bipin Rawat Rolling trophy for the Most Spirited Officer
+                undergoing the Naval Higher Command Course (NHCC) at the Naval War College, Goa.[93] In December 2013,
+                the Jhelum Stadium in Janbazpora, Baramulla was renamed General Bipin Rawat stadium. Rawat had served as
+                the GOC 19 Infantry Division, headquartered at Baramulla.
+            </h3>
+
+        </div>
+
+
+        <!-- box 16 -->
+
+        <div class="datacontainer" id="data16">
+            
+            <div class="photocontainer">
+
+                <h2><b>Photo Gallary
+                        <hr>
+                    </b>
+                </h2>
+
+                <div id="photo1"></div>
+                <div id="photo2"></div>
+                <div id="photo3"></div>
+                <div id="photo4"></div>
+                <div id="photo5"></div>
+                <div id="photo6"></div>
+
+            </div>
+        
+        
+        </div>
+
+        <div class="thanks">
+            <h1 class="end">⭐️⭐️⭐️⭐️ Thank You ⭐️⭐️⭐️⭐️</h1>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
