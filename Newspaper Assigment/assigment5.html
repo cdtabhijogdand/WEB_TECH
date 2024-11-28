@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Assigment</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(212, 210, 210);
+            display: grid;
+            gap: 10px;
+            padding: 20px;
+
+            overflow: scroll;
+            scrollbar-width: none;
+
+            grid-template-areas: 'header header header header header header header header'
+                'headline headline headline photo photo photo photo head2' 
+                'news2 news2 news2 news2 news3 news3 news4 news4'
+                'news5 news5 news5 news5 news6 news6 news7 news7'
+                'footer1 footer1 footer1 footer1 footer2 footer2 footer2 footer2';
+
+        }
+
+        .grid-items {
+            background-color: rgba(255, 255, 255, 0.2);
+            text-align: center;
+            padding: 10px;
+            font-size: 19px;
+            color: rgb(255, 255, 255);
+            text-align: justify;
+            text-indent: 50px;
+
+        }
+
+        p {
+            font-size: 18px;
+            color: black;
+            text-align: justify;
+            font-weight: normal;
+
+        }
+
+        img {
+            align-content: center;
+            /* margin-left: 10px; */
+
+            margin: 15px auto;
+            width: 490px;
+
+        }
+
+        #army{
+            width: 250px;
+        }
+
+        #farmers{
+            width: 430px;
+            align-content: center;
+            left: 10px;
+        }
+
+        .grid-items:nth-child(1) {
+            grid-area: header;
+            font-size: 130px;
+            text-align: center;
+            /* text-align: justify; */
+            height: 230px;
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+
+
+        .grid-items:nth-child(2) {
+            color: black;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 30px;
+            text-indent: 0px;
+            /* text-align: justify; */
+            grid-area: headline;
+        }
+
+        .grid-items:nth-child(3) {
+            grid-area: head2;
+            color: black;
+            text-indent: 0px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            /* text-align: justify; */
+            font-size: 20px;
+        }
+
+        .grid-items:nth-child(4) {
+            grid-area: photo;
+            color: black;
+            /* width: 35%; */
+            text-indent: 0px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            text-align: justify;
+            font-size: 35px;
+        }
+
+        .grid-items:nth-child(5) {
+            grid-area: news2;
+            color: black;
+            text-align: justify;
+            text-indent: 0px;
+        }
+
+        .grid-items:nth-child(6) {
+            grid-area: news3;
+            color: black;
+            text-align: justify;
+            text-indent: 0px;
+        }
+
+        .grid-items:nth-child(7) {
+            grid-area: news4;
+            color: black;
+            text-align: justify;
+            text-indent: 0px;
+        }
+
+        .grid-items:nth-child(8) {
+            grid-area: news5;
+        }
+
+        .grid-items:nth-child(9) {
+            grid-area: news6;
+        }
+
+        .grid-items:nth-child(10) {
+            grid-area: news7;
+        }
+
+        .grid-items:nth-child(11) {
+            grid-area: footer1;
+        }
+
+        .grid-items:nth-child(12) {
+            grid-area: footer2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid-items" id="grid-items1">
+            <hr>
+            <hr>Hindustan Times
+            <hr>
+            <hr>
+            <hr>
+        </div>
+        <div class="grid-items" id="grid-items2">US slams PLA actions back India on Ladakh
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, tenetur nostrum. Odit necessitatibus
+                cupiditate ratione veritatis dolores saepe iste quaerat, consequatur harum eaque magnam unde, quam
+                perferendis incidunt recusandae quasi dolor, facilis tempora beatae cumque? Optio esse illo cupiditate,
+                vitae ab quam quia atque animi dicta perspiciatis vel totam cumque officiis? Eveniet illum neque rerum
+                fuga vel. Odio, quidem nostrum? S slams PLA actions back India on Ladakh
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, tenetur nostrum. Odit necessitatibus
+                    cupiditate ratione veritatis dolores saepe iste quaerat, consequatur harum eaque magnam unde, quam
+                    perferendis incidunt recusandae</p>
+        </div>
+        <div class="grid-items" id="grid-items3">ALLAHABAD HC TO MONITOR CBI HATHRAS PROBE:SUPREM COURT
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum autem repellat aperiam maxime nihil,
+                accusamus quas illo possimus distinctio debitis deserunt amet consequuntur porro qui aut, voluptas,
+                adipisci
+                obcaecati sint? Quo tenetur odio quod? Libero praesentium adipisci, reiciendis, illo laudantium repellat
+                deleniti saepe unde cumque sequi, neque quia recusandae quo nisi odit quis? Quam amet molestias rem
+                repellat
+            </p>
+        </div>
+        <div class="grid-items" id="grid-items4">
+            <h3>Navy's, coast Guard on modernisation spree</h3>
+            <br>
+            <img src="./601.JPG" width="350" height="350" >
+            <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci doloribus deserunt ratione nobis
+                tempore nesciunt provident, ea cum perspiciatis laboriosam ullam aliquam architecto nihil qui, corporis
+                velit consectetur voluptatibus facere expedita sed quisquam exercitationem quasi? Necessitatibus
+                praesentium, cupiditate, fuga reiciendis nam accusantium minima rem suscipit obcaecati quaerat minus
+                ducimus.</p>
+        </div>
+
+        <div class="grid-items" id="grid-items5">
+            <h3>Vinesh Phogat disqualified from competing in finals at Paris Olympics, misses historic medal!!!</h3>
+            <p>Vinesh had scripted history by becoming the first Indian woman wrestler to reach the gold medal bout in
+                the event on Tuesday night</p>
+            <br>
+            <img src="./phogat.jpg" alt="" width="450" height="350">
+            <br>
+            <p>The Indian contingent was in for a shock as wrestler Vinesh Phogat, who was on her way to become the
+                country’s first woman wrestler to reach the Olympics final by defeating World and Olympic 50kg champion
+                Yui Susaki on Tuesday night, was eliminated for being overweight ahead of her final bout against USA’s
+                Sarah Ann Hildebrandt on Wednesday (August 7, 2024).
+
+            </p>
+        </div>
+        <div class="grid-items" id="grid-items6">
+           <h3>Personal to stay farms laws stands:MODI</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error nostrum voluptatum, sed esse natus
+                itaque maxime accusamus.
+                <br>
+                <img src="./farmers.jpg" alt="" id="farmers">
+                <br>
+                a libero non repellendus culpa! Magnam voluptas eos nostrum. Culpa numquam
+                recusandae odio nostrum enim, neque esse impedit voluptatibus, ipsum commodi qui eaque aut veniam dicta
+                exercitationem laboriosam aliquid, beatae dolore corrupti. Aliquam nemo quisquam cum amet consequuntur
+                dolor non. Ut nihil illum maxime mollitia nam facere, dolor cumque libero voluptatum aliquid quia! Quia
+                eos ducimus illum aspernatur quis doloremque. Animi voluptatem nostrum facere repudiandae amet fugiat
+                cumque minima ex debitis, voluptates quia quam beatae assumenda adipisci voluptatibus. Harum quisquam
+                dolores optio culpa commodi? Sequi explicabo, saepe voluptatibus vitae aliquam quasi, nobis dolore dicta
+                veniam eos, sit eveniet. 
+            </p>
+        </div>
+        <div class="grid-items" id="grid-items7">
+            <h3>Jawans have raisen to challenges on borders</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, distinctio blanditiis officia explicabo
+                doloremque saepe illo officiis.
+                <br>
+                <img src="./Amry.jpeg" alt="" id="army">
+                <br>
+                incidunt veritatis quas eos recusandae? Repudiandae vitae nihil impedit
+                voluptate totam odio in neque dolore atque, accusamus quae dolor. Velit omnis impedit nisi, quae eum
+                facere nesciunt vitae cum error ipsam magni quod. Officiis, enim! Explicabo suscipit dolor molestiae non
+                dolorem odit error quam nam quasi, laudantium nihil similique atque enim nostrum molestias dolores
+                eveniet voluptatem cum mollitia optio aspernatur excepturi a sunt eaque. Ea, cum saepe illo labore
+                repudiandae omnis asperiores eius amet iusto consequuntur! Laborum, rem dolor aliquid dolores temporibus
+                optio.</p>
+        </div>
+        <div class="grid-items" id="grid-items8">
+            <h3>Jawans have raisen to challenges on borders</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, distinctio blanditiis officia explicabo
+                doloremque saepe illo officiis.
+                <br>
+                <img src="./Amry.jpeg" alt="" id="army">
+                <br>
+                incidunt veritatis quas eos recusandae? Repudiandae vitae nihil impedit
+                voluptate totam odio in neque dolore atque, accusamus quae dolor. Velit omnis impedit nisi, quae eum
+                facere nesciunt vitae cum error ipsam magni quod. Officiis, enim! Explicabo suscipit dolor molestiae non
+                dolorem odit error quam nam quasi, laudantium nihil similique atque enim nostrum molestias dolores
+                eveniet voluptatem cum mollitia optio aspernatur excepturi a sunt eaque. Ea, cum saepe illo labore
+                repudiandae omnis asperiores eius amet iusto consequuntur! Laborum, rem dolor aliquid dolores temporibus
+                optio.</p>
+            
+        </div>
+        <div class="grid-items" id="grid-items9">
+            <h3>Jawans have raisen to challenges on borders</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, distinctio blanditiis officia explicabo
+                doloremque saepe illo officiis.
+                <br>
+                <img src="./Amry.jpeg" alt="" id="army">
+                <br>
+                incidunt veritatis quas eos recusandae? Repudiandae vitae nihil impedit
+                voluptate totam odio in neque dolore atque, accusamus quae dolor. Velit omnis impedit nisi, quae eum
+                facere nesciunt vitae cum error ipsam magni quod. Officiis, enim! Explicabo suscipit dolor molestiae non
+                dolorem odit error quam nam quasi, laudantium nihil similique atque enim nostrum molestias dolores
+                eveniet voluptatem cum mollitia optio aspernatur excepturi a sunt eaque. Ea, cum saepe illo labore
+                repudiandae omnis asperiores eius amet iusto consequuntur! Laborum, rem dolor aliquid dolores temporibus
+                optio.</p>
+        </div>
+
+        <div class="grid-items" id="grid-items10">
+            <h3>Jawans have raisen to challenges on borders</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, distinctio blanditiis officia explicabo
+                doloremque saepe illo officiis.
+                <br>
+                <img src="./Amry.jpeg" alt="" id="army">
+                <br>
+                incidunt veritatis quas eos recusandae? Repudiandae vitae nihil impedit
+                voluptate totam odio in neque dolore atque, accusamus quae dolor. Velit omnis impedit nisi, quae eum
+                facere nesciunt vitae cum error ipsam magni quod. Officiis, enim! Explicabo suscipit dolor molestiae non
+                dolorem odit error quam nam quasi, laudantium nihil similique atque enim nostrum molestias dolores
+                eveniet voluptatem cum mollitia optio aspernatur excepturi a sunt eaque. Ea, cum saepe illo labore
+                repudiandae omnis asperiores eius amet iusto consequuntur! Laborum, rem dolor aliquid dolores temporibus
+                optio.</p>
+        </div>
+        <div class="grid-items" id="grid-items11">
+            
+            <h3>Navy's, coast Guard on modernisation spree</h3>
+            <br>
+            <img src="./601.JPG" width="350" height="350" >
+            <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci doloribus deserunt ratione nobis
+                tempore nesciunt provident, ea cum perspiciatis laboriosam ullam aliquam architecto nihil qui, corporis
+                velit consectetur voluptatibus facere expedita sed quisquam exercitationem quasi? Necessitatibus
+                praesentium, cupiditate, fuga reiciendis nam accusantium minima rem suscipit obcaecati quaerat minus
+                ducimus.</p>
+        </div>
+        <div class="grid-items" id="grid-items12">
+            
+            <h3>Navy's, coast Guard on modernisation spree</h3>
+            <br>
+            <img src="./601.JPG" width="350" height="350" >
+            <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci doloribus deserunt ratione nobis
+                tempore nesciunt provident, ea cum perspiciatis laboriosam ullam aliquam architecto nihil qui, corporis
+                velit consectetur voluptatibus facere expedita sed quisquam exercitationem quasi? Necessitatibus
+                praesentium, cupiditate, fuga reiciendis nam accusantium minima rem suscipit obcaecati quaerat minus
+                ducimus.</p>
+        </div>
+    </div>
+</body>
+
+</html>
