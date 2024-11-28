@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Home</title>
+    <link rel="stylesheet" href="D:\WBD-M3\CSS\FontAwesome\font-awesome-4.7.0\css\font-awesome.css">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            /* background-color: bisque; */
+        }
+
+        .top {
+            vertical-align: middle;
+            position: absolute;
+            padding: 20px;
+            line-height: 30px;
+            font-size: 18px;
+            right: 20px;
+            cursor: pointer;
+            display: inline-block;
+            /* box-shadow: 0px 0px 3px white; */
+
+        }
+
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+
+        #gmail {
+            position: relative;
+            padding: 10px;
+
+        }
+
+        #images {
+            position: relative;
+            padding: 10px;
+        }
+
+        #flask {
+            position: relative;
+            padding: 10px;
+            font-size: 22px;
+        }
+
+        #more {
+            position: relative;
+            padding: 10px;
+            right: 10px;
+            font-size: 22px;
+        }
+
+
+        /* GOOGLE Name */
+
+        .google {
+            height: 150px;
+            width: 490px;
+            top: 100px;
+            left: 33%;
+            word-spacing: -30px;
+            text-align: justify;
+            right: 300px;
+            border: 1px solid;
+            text-align: center;
+            margin-bottom: 15px;
+            /* align-items: center; */
+            font-size: 115px;
+
+            line-height: 150px;
+            border: none;
+            /* padding: 8px 25px; */
+            position: relative;
+            background-color: white;
+            box-shadow: 0px 0px 3px white;
+
+        }
+
+        label {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            /* font-weight: 0px; */
+        }
+
+        #g1 {
+            color: rgb(90, 128, 230);
+        }
+
+        #o1 {
+            color: rgb(235, 3, 3);
+        }
+
+        #o2 {
+            color: orange;
+
+        }
+
+        #g2 {
+            color: rgb(90, 128, 230);
+        }
+
+        #l {
+            color: green;
+        }
+
+        #e {
+            color: rgb(235, 3, 3);
+        }
+
+
+        .searchbar {
+            top: 100px;
+            left: 400px;
+            width: 600px;
+            color: rgb(16, 53, 11);
+            /* text-indent: 50px; */
+            border-radius: 50px;
+            position: relative;
+            box-shadow: 0px 0px 10px rgb(42, 73, 40);
+            text-align: center;
+            padding: 10px;
+            line-height: 20px;
+            font-size: 22px;
+            /* right: 20px; */
+            cursor: pointer;
+        }
+
+        #search_icon{
+            position: absolute;
+            left: 25px;
+        }
+
+        #search{
+            width: 430px;
+            border: none transparent;
+            left: 0px;
+            align-items: center;
+            height: 25px;
+            line-height: 25px;
+            font-size: 22px;
+            position: relative;
+
+        }
+
+        #camera{
+            right: 25px;
+            position: absolute;
+        }
+
+        #micropbone{
+            right: 65px;
+            position: absolute;
+        }
+
+        .menuBar {
+            width: 610px;
+            height: 250px;
+            left: 65px;
+            top: 120px;
+            padding: 20px;
+            border: 1px solid transparent;
+            box-shadow: 0px 0px 0.9px;
+            align-content: center;
+            position: relative;
+            bottom: 25px;
+            margin: 0px 330px;
+            display: inline-block;
+        }
+
+        .content {
+            width: 80px;
+            height: 80px;
+            padding: 5px;
+            margin: 15px 15px;
+            border: 1px solid transparent;
+            display: inline-block;
+            position: relative;
+            /* border: none; */
+        }
+        i{
+            align-content: center;
+        }
+
+        /* First Menu */
+
+         #facebook{
+            width: 43px;
+            height: 43px;
+            left: 18px;            
+            position: absolute; 
+            align-items: center;    
+            text-align: center;
+            border-radius: 20px;
+            background-color: blue;
+            color: white;
+            font-size: 25px;
+            border: none;
+        } 
+
+        #fcname{
+            position: absolute;
+            bottom: 4px;
+            font-size: 15px;
+            text-align: center;
+        }
+        /* second menu */
+
+        #insta{
+            width: 43px;
+            height: 43px;
+            left: 18px;            
+            position: absolute; 
+            align-items: center;    
+            text-align: center;
+            border-radius: 20px;
+            /* background-color: rgb(199, 33, 177); */
+            background-image: linear-gradient(to bottom right,yellow,orange,rgb(241, 17, 185),blue) ;
+            color: white;
+            font-size: 25px;
+            border: none;
+        } 
+        #instal{
+            position: absolute;
+            bottom: 4px;
+            left: 2px;
+            font-size: 15px;
+            text-align: center;
+            align-items: center;
+        }
+
+        /* 3ed menu */
+        #gmap{
+            width: 43px;
+            height: 43px;
+            left: 18px;            
+            position: absolute; 
+            align-items: center;    
+            text-align: center;
+            border-radius: 20px;
+            background-image: linear-gradient(to bottom right,blue,gray,yellow);
+            background-color: gray;
+            color: white;
+            font-size: 25px;
+            border: none;
+        } 
+        #gmapl{
+            position: absolute;
+            bottom: 4px;
+            left: 23px;
+            font-size: 15px;
+            text-align: center;
+            align-items: center;
+        }
+
+        /* 4th menu */
+
+        #git{
+            width: 43px;
+            height: 43px;
+            left: 18px;            
+            position: absolute; 
+            align-items: center;    
+            text-align: center;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            font-size: 25px;
+            border: none;
+        } 
+        #gitl{
+            position: absolute;
+            bottom: 4px;
+            left: 13px;
+            font-size: 15px;
+            text-align: center;
+            align-items: center;
+        }
+         /* 5th menu */
+
+         #tel{
+            width: 43px;
+            height: 43px;
+            left: 18px;            
+            position: absolute; 
+            align-items: center;    
+            text-align: center;
+            border-radius: 20px;
+            background-color: skyblue;
+            color: white;
+            font-size: 25px;
+            border: none;
+        } 
+        #tell{
+            position: absolute;
+            bottom: 4px;
+            left: 7px;
+            font-size: 15px;
+            text-align: center;
+            align-items: center;
+        }
+
+        /* 6th menu */
+
+        #visa{
+            width: 43px;
+            height: 43px;
+            left: 18px;            
+            position: absolute; 
+            align-items: center;    
+            text-align: center;
+            border-radius: 20px;
+            background-color: rgb(250, 250, 32);
+            color: blue;
+            font-size: 25px;
+            border: none;
+        } 
+        #visal{
+            position: absolute;
+            bottom: 4px;
+            left: 25px;
+            font-size: 15px;
+            text-align: center;
+            align-items: center;
+        }
+
+         /* 7th menu */
+
+         #kito{
+            width: 43px;
+            height: 43px;
+            left: 18px;            
+            position: absolute; 
+            align-items: center;    
+            text-align: center;
+            border-radius: 20px;
+            background-color: slategray;
+            color: wheat;
+            font-size: 25px;
+            border: none;
+        } 
+        #kitol{
+            position: absolute;
+            bottom: 4px;
+            left: 25px;
+            font-size: 15px;
+            text-align: center;
+            align-items: center;
+        }
+
+        /* 8th menu */
+
+        #ast{
+            width: 43px;
+            height: 43px;
+            left: 18px;            
+            position: absolute; 
+            align-items: center;    
+            text-align: center;
+            border-radius: 20px;
+            background-color: goldenrod;
+            color: white;
+            font-size: 25px;
+            border: none;
+        } 
+        #astl{
+            position: absolute;
+            bottom: 4px;
+            left: 7px;
+            font-size: 15px;
+            text-align: center;
+            align-items: center;
+        }
+
+        /* 9th menu */
+
+        #twitter{
+            width: 43px;
+            height: 43px;
+            left: 18px;            
+            position: absolute; 
+            align-items: center;    
+            text-align: center;
+            border-radius: 20px;
+            background-color: skyblue;
+            color: white;
+            font-size: 25px;
+            border: none;
+        } 
+        #twitterl{
+            position: absolute;
+            bottom: 4px;
+            left: 15px;
+            font-size: 15px;
+            text-align: center;
+            align-items: center;
+        }
+
+
+        /* 10th menu */
+        #addmore{
+            width: 43px;
+            height: 43px;
+            left: 18px;            
+            position: absolute; 
+            align-items: center;    
+            text-align: center;
+            border-radius: 20px;
+            background-color: gray;
+            color: white;
+            font-size: 25px;
+            border: none;
+        } 
+        #add{
+            position: absolute;
+            bottom: 4px;
+            left: 22px;
+            font-size: 15px;
+            text-align: center;
+            align-items: center;
+        }
+
+
+        .name {
+            height: 75px;
+            width: 75px;
+            padding: 10px;
+            right: 10px;
+            border-radius: 50%;
+            background-color: rgb(124, 173, 163);
+            color: white;
+        }
+
+        button {
+            border: none;
+            padding: 8px 25px;
+            border-radius: 20px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: white;
+            size: 15px;
+            box-shadow: 0px 0px 15px gray;
+            color: rgb(8, 173, 238);
+            cursor: pointer;
+            text-shadow: 0px 5px 5px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <a id="gamil" href="#">Gmail</a>
+        <a id="images" href="#">Images</a>
+        <a href="#">
+            <i id="flask" class="fa fa-flask"></i>
+        </a>
+        <a href="">
+            <i id="more" class="fa fa-th"></i>
+        </a>
+
+        <a href="#">
+            <label for="" class="name">A</label>
+        </a>
+        <!-- <div class="name">
+            A
+        </div> -->
+
+    </div>
+
+
+    <div class="google">
+        <!-- <label for="">Google</label> -->
+        <label for="" id="g1">G</label>
+        <label for="" id="o1">o</label>
+        <label for="" id="o2">o</label>
+        <label for="" id="g2">g</label>
+        <label for="" id="l">l</label>
+        <label for="" id="e">e</label>
+    </div>
+
+    <!-- Search Bar -->
+
+    <div class="searchbar">
+
+    <!-- Search Icon -->
+        <a href="#">
+            <i id="search_icon" class="fa fa-search"></i>
+        </a>
+
+
+    <!-- inpurt Type search -->
+        <input type="search" name="" id="search">
+
+        <!-- Mic -->
+        <a href="#">
+            <i id="micropbone" class="fa fa-microphone"></i>
+        </a>
+
+        <!-- camera -->
+
+        <a href="#">
+            <i id="camera" class="fa fa-camera"></i>
+        </a>
+    </div>
+
+    <!-- Creating Menus in Crome -->
+    <div class="menuBar">
+        <div>
+            <!-- 1st menu  -->
+            <div class="content" id="data1">
+                <a href="">
+                    <i id="facebook"  class="fa fa-facebook"></i>
+                </a>
+                <label for="" id="fcname">FaceBook</label>
+                
+            </div>
+            <!-- second menu -->
+            <div class="content" id="data2">
+                <a href="">
+                    <i id="insta"  class="fa fa-instagram"></i>
+                </a>
+                <label for="" id="instal">Instagram</label>
+            </div>
+            <!-- 3ed menu -->
+            <div class="content" id="data3">
+                <a href="">
+                    <i id="gmap"  class="fa fa-map-marker"></i>
+                </a>
+                <label for="" id="gmapl">Map</label>
+            </div>
+            <!-- 4th menu -->
+            <div class="content" id="data4">
+                <a href="">
+                    <i id="git"  class="fa fa-github"></i>
+                </a>
+                <label for="" id="gitl">Git-Hub</label>
+            </div>
+            <!-- 5th menu -->
+            <div class="content" id="data5">
+                <a href="">
+                    <i id="tel"  class="fa fa-telegram"></i>
+                </a>
+                <label for="" id="tell">Telegram</label>
+            </div>
+            <!-- 6th menu -->
+            <div class="content" id="data6">
+                <a href="">
+                    <i id="visa"  class="fa fa-cc-visa"></i>
+                </a>
+                <label for="" id="visal">VISA</label>
+            </div>
+            <!-- 7th menu -->
+            <div class="content" id="data7">
+                <a href="">
+                    <i id="kito"  class="fa fa-reddit"></i>
+                </a>
+                <label for="" id="kitol">KiTo</label>
+            </div>
+            <!-- 8th menu -->
+            <div class="content" id="data8">
+                <a href="">
+                    <i id="ast"  class="fa fa-life-ring"></i>
+                </a>
+                <label for="" id="astl">Astrology</label>
+            </div>
+            <!-- 9th menu -->
+            <div class="content" id="data9">
+                <a href="">
+                    <i id="twitter"  class="fa fa-twitter"></i>
+                </a>
+                <label for="" id="twitterl">Twitter</label>
+            </div>
+            <!-- 10th menu -->
+            <div class="content" id="data10">
+                <a href="">
+                    <i id="addmore"  class="fa fa-plus"></i>
+                </a>
+                <label for="" id="add">Add</label>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Customize Button  -->
+    <div class="bottom">
+        <button> <i class="fa fa-pencil"></i> Customize Chrome</button>
+    </div>
+</body>
+
+</html>
